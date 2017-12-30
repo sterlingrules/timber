@@ -1,0 +1,141 @@
+{
+  "_from": "timber",
+  "_id": "timber@3.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-J6XGU5/t2/RYePyN3SLnFhYEihRTh5PdNYXLkIl+EDrL9JEIoDx5J3+TO9dWpYuBuTiBizGBcTX9+GQk29w34g==",
+  "_location": "/timber",
+  "_phantomChildren": {
+    "content-type": "1.0.4",
+    "debug": "2.6.9",
+    "inherits": "2.0.3",
+    "on-finished": "2.3.0",
+    "qs": "6.5.1",
+    "statuses": "1.3.1",
+    "type-is": "1.6.15",
+    "unpipe": "1.0.0"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "timber",
+    "name": "timber",
+    "escapedName": "timber",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/timber/-/timber-3.1.1.tgz",
+  "_shasum": "f8a368ed40abbc25d2ebbdd14b3e46b218be444a",
+  "_spec": "timber",
+  "_where": "/Users/sterlingrules/www/radplaid-api/radplaid-api",
+  "author": {
+    "name": "Zach Sherman",
+    "email": "zach@timber.io",
+    "url": "https://github.com/zsherman"
+  },
+  "bugs": {
+    "url": "https://github.com/timberio/timber-node/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bunyan": "^1.8.12",
+    "composable-middleware": "^0.3.0",
+    "express-request-id": "^1.4.0",
+    "find-package-json": "^1.0.0",
+    "winston": "^2.3.1"
+  },
+  "deprecated": false,
+  "description": "Timber.io node client.",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^20.0.3",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "coveralls": "^2.11.4",
+    "esdoc": "^0.5.2",
+    "eslint": "^3.19.0",
+    "eslint-config-prettier": "^2.1.1",
+    "eslint-config-xo": "^0.18.2",
+    "eslint-plugin-babel": "^4.1.1",
+    "gh-pages": "^1.0.0",
+    "jest-cli": "^20.0.4",
+    "node-mocks-http": "^1.6.5",
+    "prettier": "^1.4.2",
+    "rimraf": "2.4.3"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "homepage": "https://github.com/timberio/timber-node#readme",
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
+  "keywords": [
+    "es6",
+    "node",
+    "module",
+    "timber",
+    "logger",
+    "logging",
+    "structured logging",
+    "node logging",
+    "express logging",
+    "morgan logging",
+    "koa logging",
+    "framework logging",
+    "middleware"
+  ],
+  "license": "ISC",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "Ben Johnson",
+      "email": "ben@timber.com"
+    },
+    {
+      "name": "David Antaramian",
+      "email": "david@timber.io"
+    },
+    {
+      "name": "Garet McKinley",
+      "email": "garet@timber.io"
+    },
+    {
+      "name": "Zach Sherman",
+      "email": "zach@timber.io"
+    }
+  ],
+  "name": "timber",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/timberio/timber-node.git"
+  },
+  "scripts": {
+    "build": "npm run clean && babel -d dist src",
+    "build:docs": "esdoc",
+    "clean": "rimraf dist coverage",
+    "compile": "babel -d dist src",
+    "cover": "jest --coverage",
+    "coveralls": "npm run compile && npm test && cat ./coverage/lcov.info |  ./node_modules/coveralls/bin/coveralls.js",
+    "deploy": "git pull --rebase origin master && git push origin master",
+    "deploy:docs": "gh-pages -d docs",
+    "format": "prettier --single-quote --trailing-comma es5 --no-semi --write src/**/*.js src/*.js",
+    "lint": "eslint src",
+    "postcoveralls": "rimraf coverage",
+    "postpublish": "git push origin master --follow-tags",
+    "prepare": "npm run build",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "watch": "babel src -d dist --experimental -w"
+  },
+  "version": "3.1.1"
+}
