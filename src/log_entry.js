@@ -16,7 +16,7 @@ class LogEntry {
    */
   constructor(message, context = {}) {
     // Throw an error if no message is provided
-    if (!message) throw new Error(errors.log.noMessage)
+    // if (!message) throw new Error(errors.log.noMessage)
 
     /**
      * Reference to original log message

@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/timberio/timber-node.git"
+    "url": "git+ssh://git@github.com/sterlingrules/timber.git"
   },
   "engines": {
     "node": ">= 0.10.0"
