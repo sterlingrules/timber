@@ -117,7 +117,7 @@
   "name": "timber",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/timberio/timber-node.git"
+    "url": "git+ssh://git@github.com/sterlingrules/timber-io.git"
   },
   "scripts": {
     "build": "npm run clean && babel -d dist src",
